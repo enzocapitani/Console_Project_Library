@@ -2,8 +2,9 @@
 Biblioteca open source para desenvolvimento em terminal ou console
 ## 🤔 O que é essa biblioteca? 
 
-Essa biblioteca foi criada pensando na construção de projetos feitos no terminal, principalmente naqueles em que são para iniciantes ou que 
-estão iniciando no mundo da programação e querem deixar seus projetos mais estilizados ou com algumas funções úteis para desenvolvimento.
+Essa biblioteca foi desenvolvida para facilitar a criação de aplicações em console utilizando Java. Seu principal objetivo é oferecer recursos que tornem o desenvolvimento mais simples, organizado e agradável, especialmente para quem está começando na programação.
+
+Com a CPL, é possível adicionar mais estilo às aplicações de terminal e utilizar utilitários que agilizam tarefas comuns, permitindo que o desenvolvedor foque na lógica do projeto em vez de reimplementar funcionalidades básicas.
 
 ## 💻⬇ Como baixar e usar o CPL?
 

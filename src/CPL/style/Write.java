@@ -58,7 +58,7 @@ public class Write {
 		for(int i = 0; i < phrase.length(); i++) {
 
 			System.out.print(
-				color.getAnsi() +
+				color.toString() +
 				phrase.charAt(i) +
 				WriteColor.RESET
 

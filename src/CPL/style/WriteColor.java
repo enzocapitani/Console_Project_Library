@@ -18,11 +18,7 @@ public enum WriteColor {
     private WriteColor(String ansi){
         this.ansi = ansi;
     }
-
-    public String getAnsi() {
-        return ansi;
-    }
-
+    
     //Sobreposição do toString para facilitar a escrita do enum
     @Override
     public String toString(){

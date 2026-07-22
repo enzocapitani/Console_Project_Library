@@ -1,6 +1,6 @@
 package CPL.style;
 
-public class Write implements WriteInterface {
+public class Write {
 	
 	//Delay pré definido
 	private static final int delay = 50;
@@ -47,6 +47,49 @@ public class Write implements WriteInterface {
 		
 		System.out.println();
 		
+	}
+
+	public static void write(String phrase, WriteColor color){
+
+		for(int i = 0; i < phrase.length(); i++) {
+
+			System.out.print(
+				color.getAnsi() +
+				phrase.charAt(i) +
+				WriteColor.RESET
+
+			);
+			
+			try {
+				Thread.sleep(delay);
+			}catch(Exception e ) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+		System.out.println();
+	}
+
+	public static void write(String phrase, WriteColor color, int delay){
+		for(int i = 0; i < phrase.length(); i++) {
+
+			System.out.print(
+				color.toString() +
+				phrase.charAt(i) +
+				WriteColor.RESET
+
+			);
+			
+			try {
+				Thread.sleep(delay);
+			}catch(Exception e ) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+		System.out.println();
 	}
 
 }

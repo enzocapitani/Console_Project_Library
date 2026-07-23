@@ -33,7 +33,7 @@ public void genericFunction(){
 }
 ```
 Saída:
-CPL é muito útil!
+CPL é muito útil!<br>
 CPL é muito útil!
 
 ### catchInt()
@@ -59,7 +59,7 @@ public void genericFunction(){
 }
 ```
 Saída:
-5.94
+5.94<br>
 5.94
 
 ## Exemplo detalhado em soma simples

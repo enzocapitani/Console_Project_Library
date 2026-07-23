@@ -24,7 +24,8 @@ public class Main {
 }
 ```
 
-saida:<hr>
+saida:
+```text
 ==============
     PROGRAM
 ==============
@@ -32,6 +33,7 @@ saida:<hr>
 2- About
 3- Exit
 ==============
+```
 
 # Version 0.02
 ## Features

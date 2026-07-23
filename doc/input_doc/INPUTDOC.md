@@ -32,7 +32,7 @@ public void genericFunction(){
     System.out.println(userValue);
 }
 ```
-Saída:
+Saída:<br>
 CPL é muito útil!<br>
 CPL é muito útil!
 
@@ -45,8 +45,8 @@ public void genericFunction(){
     System.out.println(userValue);
 }
 ```
-Saída:
-100
+Saída:<br>
+100<br>
 100
 
 ### catchDouble()
@@ -58,20 +58,32 @@ public void genericFunction(){
     System.out.println(userValue);
 }
 ```
-Saída:
+Saída:<br>
 5.94<br>
 5.94
 
 ## Exemplo detalhado em soma simples
 ```java
 public void sum(){
+    System.out.println("Hey! What is your name?");
+    String name = Input.catchString();
+
+    System.out.println("Lets go sum!");
+
     System.out.println("What is the first value?");
     int value1 = Input.catchInt();
     
     System.out.println("What is the second value?");
     int value2 = Input.catchInt();
 
-    int sum = value1 + value2;
-    System.out.println(sum);
+    System.out.println("Do you wanna view the sum? true/false");
+    boolean answer = Input.catchBoolean();
+
+    if(answer){
+        int sum = value1 + value2;
+        System.out.println("Sum: "+sum);
+    }else{
+        System.out.println("Okay, bye "+name+"!");
+    }
 }
 ```

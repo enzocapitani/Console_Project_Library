@@ -1,5 +1,7 @@
 # 📚⚙ CPL Console Project Library | Java 
 Biblioteca open source para desenvolvimento em terminal ou console
+
+Escreva com estilo, gere menus rapidamente, capture dados no terminal e mais!
 ## 🤔 O que é essa biblioteca? 
 
 Essa biblioteca foi desenvolvida para facilitar a criação de aplicações em console utilizando Java. Seu principal objetivo é oferecer recursos que tornem o desenvolvimento mais simples, organizado e agradável, especialmente para quem está começando na programação.

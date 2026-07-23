@@ -1,3 +1,38 @@
+# Version 0.03
+## Features
+Adicionada a classe Menu
+### Menu
+- É possível agora criar menus utilizando a classe MENU
+
+simpleMenu(String title, String options);
+simpleTypeMenu(String title, String options, int delay);
+
+Essas novas funções recebem como parâmetro o título do menu, um vetor de opções do menu e, a com efeito de escrita, o delay
+
+exemplo: 
+```java
+package CPL;
+
+import CPL.menu.Menu;
+
+public class Main {
+    public static void main(String[] args) {
+        String options[] = {"Login", "About", "Exit"};
+
+        Menu.simpleMenu("PROGRAM", options);
+    }
+}
+```
+
+saida:<hr>
+==============
+    PROGRAM
+==============
+1- Login
+2- About
+3- Exit
+==============
+
 # Version 0.02
 ## Features
 Adicionada a classe Input e novas funções na Write

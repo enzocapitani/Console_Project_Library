@@ -49,12 +49,12 @@ Após a importação, a biblioteca estará disponível para uso no projeto.
 package principal;
 
 import CPL.style.Write;
-import CPL.util.CleanConsole;
+import CPL.util.CleanTerminal;
 
 public class Main {
 	public static void main(String[] args) {
 		Write.write("Olá mundo!!", 100);
-		CleanConsole.clean();
+		CleanTerminal.clean();
 	}
 }
 

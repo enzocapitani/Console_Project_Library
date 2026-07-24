@@ -67,7 +67,10 @@ public class Menu {
     }
 
     /**
+     * Escreve o menu em caixa, cerca o titulo e as opções de caracteres, formando uma caixa
      * 
+     * @param title
+     * @param options
      */
     public static void boxMenu(String title, String options[]){
         String separator = generateSeparator(title, options, '-');
@@ -136,7 +139,16 @@ public class Menu {
 
     }
 
-    private static String generateSurroundedTitle(String separator, String title, int maiorString){
+    /**
+     * Centraliza o título do menu em relação ao tamanho da linha
+     * separadora e adiciona ao seu redor o caractere '|'.
+     *
+     * @param separator Linha separadora utilizada como referência.
+     * @param title Título do menu.
+     * @param biggestString Maior string entre as opções e o titulo
+     * @return O título centralizado e fechado por '|'.
+     */
+    private static String generateSurroundedTitle(String separator, String title, int biggestString){
         StringBuilder sb = new StringBuilder();
 
         int espacoBranco = separator.length()/2 - title.length()/2;
@@ -154,7 +166,7 @@ public class Menu {
             sb.append(title.charAt(i));
         }
 
-        if(maiorString % 2 != 0) espacoBranco -= 1;
+        if(biggestString % 2 != 0) espacoBranco -= 1;
 
         for(int i = 0; i < espacoBranco; i++){
             if(i == espacoBranco - 1){
@@ -168,6 +180,13 @@ public class Menu {
 
     }
 
+    /**
+     * Procura o maior elemento entre o titulo e as opções
+     * 
+     * @param title o titulo do menu
+     * @param options as opcoes do menu
+     * @return o maior elemento entre o titulo e as opçoes
+     */
     private static int biggestElement(String title, String[] options){
         int maiorString = title.length();
 
@@ -179,13 +198,19 @@ public class Menu {
         return maiorString;
     }
 
+    /**
+     * Escreve a parte de opções do boxMenu
+     * 
+     * @param options as opções
+     * @param separatorSize o tamanho do separador
+     */
     private static void writeOptions(String[] options, int separatorSize){
         StringBuilder sb = new StringBuilder();
 
         for(int i = 0; i < options.length; i++){
             for(int j = 0; j < separatorSize; j++){
                 
-                if(j < 3){
+                if(j < 4){
                     switch (j) {
                         case 0:
                             sb.append('|');
@@ -196,12 +221,15 @@ public class Menu {
                         case 2: 
                             sb.append('-');
                             break;
+                        case 3: 
+                            sb.append(" ");
+                            break;
                     }
                     continue;
                 }
 
-                if(j >= 3 && j < options[i].length() + 3){
-                    sb.append(options[i].charAt(j - 3));
+                if(j >= 4 && j < options[i].length() + 4){
+                    sb.append(options[i].charAt(j - 4));
                     continue;
                 }
 

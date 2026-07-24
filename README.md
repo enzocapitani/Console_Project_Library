@@ -10,6 +10,8 @@ Com a CPL, é possível adicionar mais estilo às aplicações de terminal e uti
 
 ## 💻⬇ Como baixar e usar o CPL?
 
+Atenção! É essencial utilizar a versão do JDK 21 para melhor experiência.
+
 ### ⚙👉 Eclipse
 
 1. Baixe o arquivo `.jar` da biblioteca na página de **Releases** do projeto.
@@ -63,8 +65,9 @@ public class Main {
 ```
 Escreve letra por letra e após limpa o terminal
 
-# Créditos 👩‍💻
-Desenvolvido e publicado por **Enzo Capitani**, desenvolvedor de software e graduando em ciência da computação
 
 # Licença 📃
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
+
+# Créditos 👩‍💻
+Desenvolvido e publicado por **Enzo Capitani**, desenvolvedor de software e graduando em ciência da computação
